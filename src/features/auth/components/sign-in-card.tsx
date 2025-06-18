@@ -2,8 +2,6 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
-import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa6";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -91,27 +89,6 @@ export const SignInCard = () => {
         <DottedSeparator />
       </div>
       <CardContent className="p-7 flex flex-col gap-y-4">
-        {/* <Button
-          onClick={() => signUpWithGoogle()}
-          disabled={isPending}
-          variant="secondary"
-          size="lg"
-          className="w-full"
-        >
-          <FcGoogle className="mr-2 size-5" />
-          Login with Google
-        </Button>
-        <Button
-          aria-disabled
-          onClick={() => signUpWithGithub()}
-          disabled={isPending}
-          variant="secondary"
-          size="lg"
-          className="w-full"
-        >
-          <FaGithub className="mr-2 size-5" />
-          Login with GitHub
-        </Button> */}
         <div className="w-full bg-secondary text-secondary-foreground rounded-md p-4 text-center text-base">
           <p className="mb-1">
             <strong>Email:</strong> <span className="select-all">john.doe@demoapp.io</span>
